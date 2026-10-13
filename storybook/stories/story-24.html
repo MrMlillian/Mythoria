@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | Smoke Over Blackwater</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../genres.html">Genres</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="reading-progress-bar"></div>
+  </div>
+
+  <main class="site-main story-main">
+    <article class="story" id="story">
+      <section class="story-info">
+        <img class="story-info__cover" src="../images/covers/cover-24.svg" alt="Cover of Smoke Over Blackwater">
+        <div class="story-info__details">
+          <h1 class="story-info__title">Smoke Over Blackwater</h1>
+          <p class="story-info__author">Author: Rhea Donovan</p>
+          <p class="story-info__genre">Genre: Mystery</p>
+          <div class="story-info__actions">
+            <button type="button" class="btn btn--like" id="like-btn" aria-pressed="false">
+              <span class="like-icon">&#9825;</span>
+              <span class="like-count" id="like-count">0</span>
+            </button>
+            <button type="button" class="btn btn--synopsis" id="synopsis-toggle" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="synopsis" id="synopsis">
+        <h2 class="synopsis__heading">Synopsis</h2>
+        <p class="synopsis__text">A detective investigates a fire that only burned the pages of a single book.</p>
+      </section>
+
+      <section class="chapter" id="chapter">
+        <h2 class="chapter__title">Chapter 1: Ashes and Ink</h2>
+        <figure class="chapter__figure">
+          <img class="chapter__image" src="../images/supporting/support-24.svg" alt="Illustration for Smoke Over Blackwater">
+          <figcaption class="chapter__caption">A burnt desk with a single scorched book at the center.</figcaption>
+        </figure>
+        <div class="chapter__content" id="chapter-content">
+          <p>The fire had gutted the study yet left the furniture untouched. Only one book had burned to cinders, and it sat open on the desk.</p>
+          <p>Inspector Vale sifted through the ash and found a single unburned corner. On it was a name, written in a hand she recognized.</p>
+          <p>It was her own.</p>
+        </div>
+      </section>
+
+      <nav class="story-pager" aria-label="Story navigation">
+        <a class="btn" href="story-23.html">Previous Story</a>
+        <a class="btn" href="../library.html">Back to Library</a>
+        <a class="btn" href="story-25.html">Next Story</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | The Girl and the Glass Mountain</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../genres.html">Genres</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="reading-progress-bar"></div>
+  </div>
+
+  <main class="site-main story-main">
+    <article class="story" id="story">
+      <section class="story-info">
+        <img class="story-info__cover" src="../images/covers/cover-21.svg" alt="Cover of The Girl and the Glass Mountain">
+        <div class="story-info__details">
+          <h1 class="story-info__title">The Girl and the Glass Mountain</h1>
+          <p class="story-info__author">Author: Zara Whitfield</p>
+          <p class="story-info__genre">Genre: Fairy Tale</p>
+          <div class="story-info__actions">
+            <button type="button" class="btn btn--like" id="like-btn" aria-pressed="false">
+              <span class="like-icon">&#9825;</span>
+              <span class="like-count" id="like-count">0</span>
+            </button>
+            <button type="button" class="btn btn--synopsis" id="synopsis-toggle" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="synopsis" id="synopsis">
+        <h2 class="synopsis__heading">Synopsis</h2>
+        <p class="synopsis__text">To save her village, a girl must climb a mountain no one has ever crossed.</p>
+      </section>
+
+      <section class="chapter" id="chapter">
+        <h2 class="chapter__title">Chapter 1: The First Step</h2>
+        <figure class="chapter__figure">
+          <img class="chapter__image" src="../images/supporting/support-21.svg" alt="Illustration for The Girl and the Glass Mountain">
+          <figcaption class="chapter__caption">A glittering glass mountain under a pale sunrise.</figcaption>
+        </figure>
+        <div class="chapter__content" id="chapter-content">
+          <p>The mountain was smooth as a mirror, and every climber slid back to the bottom. But the river behind the village had dried, and there was no other water.</p>
+          <p>Ada wrapped her boots in wool, carried a pouch of sand, and sprinkled it with every step.</p>
+          <p>Halfway up, she looked down and saw her whole village looking up, and she began to climb as if the sky itself were pulling her.</p>
+        </div>
+      </section>
+
+      <nav class="story-pager" aria-label="Story navigation">
+        <a class="btn" href="story-20.html">Previous Story</a>
+        <a class="btn" href="../library.html">Back to Library</a>
+        <a class="btn" href="story-22.html">Next Story</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <section class="hero">
+      <h1 class="hero__title">Every Story Begins With a Page</h1>
+      <p class="hero__text">A small library of short stories — one chapter each. Fantasy, horror, romance, mystery, and more.</p>
+    </section>
+
+    <section class="library">
+      <h2 class="section-title">Featured Stories</h2>
+      <div class="book-grid">
+
+        <article class="book-card" data-genre="Fantasy">
+          <img class="book-card__cover" src="images/covers/cover-01.svg" alt="Cover of The Lantern Keeper">
+          <div class="book-card__body">
+            <h3 class="book-card__title">The Lantern Keeper</h3>
+            <p class="book-card__author">by Elara Whitmore</p>
+            <p class="book-card__genre">Fantasy</p>
+            <a class="btn btn--read" href="stories/story-01.html">Read Story</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="Fantasy">
+          <img class="book-card__cover" src="images/covers/cover-02.svg" alt="Cover of Clockwork Garden">
+          <div class="book-card__body">
+            <h3 class="book-card__title">Clockwork Garden</h3>
+            <p class="book-card__author">by Tobias Reed</p>
+            <p class="book-card__genre">Fantasy</p>
+            <a class="btn btn--read" href="stories/story-02.html">Read Story</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="Sci-Fi">
+          <img class="book-card__cover" src="images/covers/cover-03.svg" alt="Cover of Signal from Kepler Station">
+          <div class="book-card__body">
+            <h3 class="book-card__title">Signal from Kepler Station</h3>
+            <p class="book-card__author">by Dana Okafor</p>
+            <p class="book-card__genre">Sci-Fi</p>
+            <a class="btn btn--read" href="stories/story-03.html">Read Story</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="Mystery">
+          <img class="book-card__cover" src="images/covers/cover-04.svg" alt="Cover of The Last Bus to Nowhere">
+          <div class="book-card__body">
+            <h3 class="book-card__title">The Last Bus to Nowhere</h3>
+            <p class="book-card__author">by Priya Nandakumar</p>
+            <p class="book-card__genre">Mystery</p>
+            <a class="btn btn--read" href="stories/story-04.html">Read Story</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="Romance">
+          <img class="book-card__cover" src="images/covers/cover-05.svg" alt="Cover of Salt and Honey">
+          <div class="book-card__body">
+            <h3 class="book-card__title">Salt and Honey</h3>
+            <p class="book-card__author">by Camille Dupree</p>
+            <p class="book-card__genre">Romance</p>
+            <a class="btn btn--read" href="stories/story-05.html">Read Story</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-genre="Horror">
+          <img class="book-card__cover" src="images/covers/cover-06.svg" alt="Cover of The House on Willow Lane">
+          <div class="book-card__body">
+            <h3 class="book-card__title">The House on Willow Lane</h3>
+            <p class="book-card__author">by Gideon Ashby</p>
+            <p class="book-card__genre">Horror</p>
+            <a class="btn btn--read" href="stories/story-06.html">Read Story</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="info-grid" style="margin-top: 3rem;">
+      <article class="info-card">
+        <h3>30 Stories</h3>
+        <p>A short, curated collection — one chapter each, so you can read a whole story in one sitting.</p>
+      </article>
+      <article class="info-card">
+        <h3>Many Genres</h3>
+        <p>From cozy mysteries to horror, from fantasy kingdoms to distant stars.</p>
+      </article>
+      <article class="info-card">
+        <h3>Read Anywhere</h3>
+        <p>Designed to be readable on any device, with a dark mode for late-night reading.</p>
+      </article>
+    </section>
+
+    <section style="text-align: center; margin-top: 3rem;">
+      <a class="btn" href="library.html">Browse All 30 Stories</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>

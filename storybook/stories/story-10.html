@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | The Cartographer&#x27;s Daughter</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../genres.html">Genres</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="reading-progress-bar"></div>
+  </div>
+
+  <main class="site-main story-main">
+    <article class="story" id="story">
+      <section class="story-info">
+        <img class="story-info__cover" src="../images/covers/cover-10.svg" alt="Cover of The Cartographer&#x27;s Daughter">
+        <div class="story-info__details">
+          <h1 class="story-info__title">The Cartographer&#x27;s Daughter</h1>
+          <p class="story-info__author">Author: Isolde Fairchild</p>
+          <p class="story-info__genre">Genre: Historical</p>
+          <div class="story-info__actions">
+            <button type="button" class="btn btn--like" id="like-btn" aria-pressed="false">
+              <span class="like-icon">&#9825;</span>
+              <span class="like-count" id="like-count">0</span>
+            </button>
+            <button type="button" class="btn btn--synopsis" id="synopsis-toggle" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="synopsis" id="synopsis">
+        <h2 class="synopsis__heading">Synopsis</h2>
+        <p class="synopsis__text">A girl secretly finishes her father&#x27;s map and discovers a coastline no one else believes exists.</p>
+      </section>
+
+      <section class="chapter" id="chapter">
+        <h2 class="chapter__title">Chapter 1: Ink and Salt</h2>
+        <figure class="chapter__figure">
+          <img class="chapter__image" src="../images/supporting/support-10.svg" alt="Illustration for The Cartographer&#x27;s Daughter">
+          <figcaption class="chapter__caption">A rolled map on a candlelit desk beside a brass compass.</figcaption>
+        </figure>
+        <div class="chapter__content" id="chapter-content">
+          <p>In the year 1604, Maren&#x27;s father went blind, but the harbor merchants still waited for his maps. Maren copied his strokes in secret, line by careful line.</p>
+          <p>One night she added a coastline from a sailor&#x27;s drunken tale and signed it with her father&#x27;s mark.</p>
+          <p>Months later a ship returned with salt-stained men who swore they had landed there, and who asked, trembling, to meet the mapmaker.</p>
+        </div>
+      </section>
+
+      <nav class="story-pager" aria-label="Story navigation">
+        <a class="btn" href="story-09.html">Previous Story</a>
+        <a class="btn" href="../library.html">Back to Library</a>
+        <a class="btn" href="story-11.html">Next Story</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>

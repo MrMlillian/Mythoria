@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | Captain Pip and the Paper Sea</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../genres.html">Genres</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="reading-progress-bar"></div>
+  </div>
+
+  <main class="site-main story-main">
+    <article class="story" id="story">
+      <section class="story-info">
+        <img class="story-info__cover" src="../images/covers/cover-07.svg" alt="Cover of Captain Pip and the Paper Sea">
+        <div class="story-info__details">
+          <h1 class="story-info__title">Captain Pip and the Paper Sea</h1>
+          <p class="story-info__author">Author: Hannah Lowell</p>
+          <p class="story-info__genre">Genre: Adventure</p>
+          <div class="story-info__actions">
+            <button type="button" class="btn btn--like" id="like-btn" aria-pressed="false">
+              <span class="like-icon">&#9825;</span>
+              <span class="like-count" id="like-count">0</span>
+            </button>
+            <button type="button" class="btn btn--synopsis" id="synopsis-toggle" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="synopsis" id="synopsis">
+        <h2 class="synopsis__heading">Synopsis</h2>
+        <p class="synopsis__text">A small boy sails a newspaper boat across an ocean made of old maps.</p>
+      </section>
+
+      <section class="chapter" id="chapter">
+        <h2 class="chapter__title">Chapter 1: Anchors Aweigh</h2>
+        <figure class="chapter__figure">
+          <img class="chapter__image" src="../images/supporting/support-07.svg" alt="Illustration for Captain Pip and the Paper Sea">
+          <figcaption class="chapter__caption">A tiny paper boat riding on a sea of folded maps.</figcaption>
+        </figure>
+        <div class="chapter__content" id="chapter-content">
+          <p>Pip&#x27;s ship was made of folded newspaper, and its sail was a postage stamp. Under his bed, the floorboards had become an endless sea of blue ink.</p>
+          <p>His crew was a grumpy cat named Biscuit and a parrot who only knew the words &#x27;More cheese.&#x27; Together they chased the horizon.</p>
+          <p>By the third wave they found an island shaped like a question mark, and Pip knew exactly what he would ask it.</p>
+        </div>
+      </section>
+
+      <nav class="story-pager" aria-label="Story navigation">
+        <a class="btn" href="story-06.html">Previous Story</a>
+        <a class="btn" href="../library.html">Back to Library</a>
+        <a class="btn" href="story-08.html">Next Story</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythoria | Treasure of the Drowned Bell</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="../index.html">Mythoria</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../library.html">Library</a></li>
+          <li><a href="../genres.html">Genres</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
+    </div>
+  </header>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="reading-progress-bar"></div>
+  </div>
+
+  <main class="site-main story-main">
+    <article class="story" id="story">
+      <section class="story-info">
+        <img class="story-info__cover" src="../images/covers/cover-20.svg" alt="Cover of Treasure of the Drowned Bell">
+        <div class="story-info__details">
+          <h1 class="story-info__title">Treasure of the Drowned Bell</h1>
+          <p class="story-info__author">Author: Callum Redfern</p>
+          <p class="story-info__genre">Genre: Adventure</p>
+          <div class="story-info__actions">
+            <button type="button" class="btn btn--like" id="like-btn" aria-pressed="false">
+              <span class="like-icon">&#9825;</span>
+              <span class="like-count" id="like-count">0</span>
+            </button>
+            <button type="button" class="btn btn--synopsis" id="synopsis-toggle" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="synopsis" id="synopsis">
+        <h2 class="synopsis__heading">Synopsis</h2>
+        <p class="synopsis__text">Two siblings dive for a legendary bell that rings only when the sea is angry.</p>
+      </section>
+
+      <section class="chapter" id="chapter">
+        <h2 class="chapter__title">Chapter 1: Below the Tide</h2>
+        <figure class="chapter__figure">
+          <img class="chapter__image" src="../images/supporting/support-20.svg" alt="Illustration for Treasure of the Drowned Bell">
+          <figcaption class="chapter__caption">A rusted bell half hidden in coral and green water.</figcaption>
+        </figure>
+        <div class="chapter__content" id="chapter-content">
+          <p>Everyone in Port Merrow knew the legend: a church bell sunk during a storm, still tolling whenever disaster approached.</p>
+          <p>Jess and her brother Tom rowed out at low tide with a rope, two lanterns, and more courage than sense.</p>
+          <p>As they descended, the bell rang once, deep and slow, and the water around them turned cold as winter.</p>
+        </div>
+      </section>
+
+      <nav class="story-pager" aria-label="Story navigation">
+        <a class="btn" href="story-19.html">Previous Story</a>
+        <a class="btn" href="../library.html">Back to Library</a>
+        <a class="btn" href="story-21.html">Next Story</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Storybook. ITE 1 Project.</p>
+    <p>Created by Mark Lawrence S. Bas</p>
+  </footer>
+</body>
+</html>
