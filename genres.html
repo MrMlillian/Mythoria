@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mythoria | Genres</title>
+  <title>Storybook | Genres</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="index.html">Mythoria</a>
+      <a class="site-logo" href="index.html">Storybook</a>
       <nav class="site-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html">Library</a></li>
-          <li><a href="genres.html" class="active" aria-current="page">Genres</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li><li><a href="library.html">Library</a></li><li><a href="genres.html" class="active" aria-current="page">Genres</a></li><li><a href="about.html">About</a></li>
         </ul>
       </nav>
       <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
@@ -29,196 +26,206 @@
       <p>Browse all 30 stories by their genre.</p>
     </section>
 
-    <section class="genre-section">
-      <h2>Fantasy</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-01.html">The Lantern Keeper</a>
-          <span class="genre-list__author">by Elara Whitmore</span>
-        </li>
-        <li>
-          <a href="stories/story-02.html">Clockwork Garden</a>
-          <span class="genre-list__author">by Tobias Reed</span>
-        </li>
-        <li>
-          <a href="stories/story-14.html">A Dragon Named Tuesday</a>
-          <span class="genre-list__author">by Fiona Gallagher</span>
-        </li>
-        <li>
-          <a href="stories/story-17.html">The Midnight Library</a>
-          <span class="genre-list__author">by Rowan Ellis</span>
-        </li>
-        <li>
-          <a href="stories/story-25.html">Seven Wishes at the Wishing Well</a>
-          <span class="genre-list__author">by Noor Aziz</span>
-        </li>
-        <li>
-          <a href="stories/story-29.html">The Wind Merchant</a>
-          <span class="genre-list__author">by Tariq Benali</span>
-        </li>
-      </ul>
+    <nav class="chip-row" aria-label="Jump to genre"><a class="chip" href="#romance">Romance</a><a class="chip" href="#horror">Horror</a><a class="chip" href="#fantasy">Fantasy</a><a class="chip" href="#drama">Drama</a><a class="chip" href="#adventure">Adventure</a><a class="chip" href="#fairy-tale">Fairy Tale</a><a class="chip" href="#comedy">Comedy</a><a class="chip" href="#fable">Fable</a><a class="chip" href="#thriller">Thriller</a><a class="chip" href="#mystery">Mystery</a></nav>
+
+    <section class="genre-section" id="romance">
+      <article>
+        <h2>Romance <span>(2)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-01.html">The Frog-King; or, Iron Henry</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-08.html">Ash-Maiden</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Sci-Fi</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-03.html">Signal from Kepler Station</a>
-          <span class="genre-list__author">by Dana Okafor</span>
-        </li>
-        <li>
-          <a href="stories/story-09.html">Beneath the Glass Ocean</a>
-          <span class="genre-list__author">by Marina Volkov</span>
-        </li>
-        <li>
-          <a href="stories/story-15.html">The Robot Who Learned to Whistle</a>
-          <span class="genre-list__author">by Kenji Matsuda</span>
-        </li>
-        <li>
-          <a href="stories/story-22.html">Dust of Distant Stars</a>
-          <span class="genre-list__author">by Leona Castellanos</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="horror">
+      <article>
+        <h2>Horror <span>(2)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-02.html">The Wolf and the Seven Little Kids</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-06.html">Haensel and Grethel</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Mystery</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-04.html">The Last Bus to Nowhere</a>
-          <span class="genre-list__author">by Priya Nandakumar</span>
-        </li>
-        <li>
-          <a href="stories/story-24.html">Smoke Over Blackwater</a>
-          <span class="genre-list__author">by Rhea Donovan</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="fantasy">
+      <article>
+        <h2>Fantasy <span>(3)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-03.html">Rapunzel</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-07.html">The Seven Ravens</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-17.html">The Frogs Asking for a King</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Romance</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-05.html">Salt and Honey</a>
-          <span class="genre-list__author">by Camille Dupree</span>
-        </li>
-        <li>
-          <a href="stories/story-16.html">Letters from the Lighthouse</a>
-          <span class="genre-list__author">by Ingrid Solberg</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="drama">
+      <article>
+        <h2>Drama <span>(5)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-04.html">The Star-Money</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-24.html">The Dog and the Shadow</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-25.html">The Wolf and the Lamb</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-27.html">The Tortoise and the Eagle</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-28.html">The Father and His Sons</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Horror</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-06.html">The House on Willow Lane</a>
-          <span class="genre-list__author">by Gideon Ashby</span>
-        </li>
-        <li>
-          <a href="stories/story-18.html">Whispers in the Cornfield</a>
-          <span class="genre-list__author">by Abigail Thorne</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="adventure">
+      <article>
+        <h2>Adventure <span>(4)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-05.html">The White Snake</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-11.html">The Lion and the Mouse</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-16.html">The Fox and the Goat</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-23.html">The Bear and the Two Travelers</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Adventure</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-07.html">Captain Pip and the Paper Sea</a>
-          <span class="genre-list__author">by Hannah Lowell</span>
-        </li>
-        <li>
-          <a href="stories/story-20.html">Treasure of the Drowned Bell</a>
-          <span class="genre-list__author">by Callum Redfern</span>
-        </li>
-        <li>
-          <a href="stories/story-27.html">Beyond the Frozen Gate</a>
-          <span class="genre-list__author">by Astrid Lindgaard</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="fairy-tale">
+      <article>
+        <h2>Fairy Tale <span>(1)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-09.html">The Elves and the Shoemaker</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Fable</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-08.html">The Fox Who Borrowed Thunder</a>
-          <span class="genre-list__author">by Samir Haddad</span>
-        </li>
-        <li>
-          <a href="stories/story-23.html">The Tailor of Thistledown</a>
-          <span class="genre-list__author">by Edmund Fairbairn</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="comedy">
+      <article>
+        <h2>Comedy <span>(5)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-10.html">The Three Brothers</a>
+            <span class="genre-list__author">by Brothers Grimm</span>
+          </li>
+          <li>
+            <a href="stories/story-14.html">The Fox and the Crow</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-20.html">The Mice in Council</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-21.html">The Vain Jackdaw</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-26.html">The Astronomer</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Historical</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-10.html">The Cartographer&#x27;s Daughter</a>
-          <span class="genre-list__author">by Isolde Fairchild</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="fable">
+      <article>
+        <h2>Fable <span>(3)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-12.html">The Hare and the Tortoise</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-13.html">The Ants and the Grasshopper</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-30.html">The Boy and the Filberts</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Comedy</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-11.html">Nine Lives of Mr. Whiskers</a>
-          <span class="genre-list__author">by Jonah Pierce</span>
-        </li>
-        <li>
-          <a href="stories/story-26.html">The Great Pancake Disaster</a>
-          <span class="genre-list__author">by Bernard Pickles</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="thriller">
+      <article>
+        <h2>Thriller <span>(4)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-15.html">The Shepherd’s Boy and the Wolf</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-18.html">The Sick Lion</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-19.html">The Stag in the Ox-Stall</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+          <li>
+            <a href="stories/story-29.html">The Farmer and the Snake</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
-    <section class="genre-section">
-      <h2>Fairy Tale</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-12.html">The Day the Moon Fell Asleep</a>
-          <span class="genre-list__author">by Lila Brannigan</span>
-        </li>
-        <li>
-          <a href="stories/story-21.html">The Girl and the Glass Mountain</a>
-          <span class="genre-list__author">by Zara Whitfield</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="genre-section">
-      <h2>Thriller</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-13.html">Echoes in the Quarry</a>
-          <span class="genre-list__author">by Victor Maddox</span>
-        </li>
-      </ul>
-    </section>
-
-    <section class="genre-section">
-      <h2>Drama</h2>
-      <ul class="genre-list">
-        <li>
-          <a href="stories/story-19.html">The Boy Who Collected Silence</a>
-          <span class="genre-list__author">by Theo Marchetti</span>
-        </li>
-        <li>
-          <a href="stories/story-28.html">The Violin in the Attic</a>
-          <span class="genre-list__author">by Margot Beaumont</span>
-        </li>
-        <li>
-          <a href="stories/story-30.html">Home at the End of the Road</a>
-          <span class="genre-list__author">by Nadia Hartwell</span>
-        </li>
-      </ul>
+    <section class="genre-section" id="mystery">
+      <article>
+        <h2>Mystery <span>(1)</span></h2>
+        <ul class="genre-list">
+          <li>
+            <a href="stories/story-22.html">The Old Woman and the Physician</a>
+            <span class="genre-list__author">by Aesop</span>
+          </li>
+        </ul>
+      </article>
     </section>
 
   </main>
@@ -226,6 +233,7 @@
   <footer class="site-footer">
     <p>&copy; 2026 Storybook. ITE 1 Project.</p>
     <p>Created by Mark Lawrence S. Bas</p>
+    <p>Stories are public domain classics from Project Gutenberg (gutenberg.org).</p>
   </footer>
 </body>
 </html>

@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mythoria | Library</title>
+  <title>Storybook | Library</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-logo" href="index.html">Mythoria</a>
+      <a class="site-logo" href="index.html">Storybook</a>
       <nav class="site-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html" class="active" aria-current="page">Library</a></li>
-          <li><a href="genres.html">Genres</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li><li><a href="library.html" class="active" aria-current="page">Library</a></li><li><a href="genres.html">Genres</a></li><li><a href="about.html">About</a></li>
         </ul>
       </nav>
       <button type="button" id="theme-toggle" class="btn btn--toggle" aria-label="Toggle dark and light mode">Dark / Light</button>
@@ -26,320 +23,329 @@
   <main class="site-main">
     <section class="page-intro">
       <h1 class="page-title">Library</h1>
-      <p>All 30 stories in one place.</p>
+      <p>All 30 stories in one place. Search by title or author, or filter by genre.</p>
     </section>
+
+    <section class="filters" aria-label="Filter stories">
+      <input type="search" id="search" placeholder="Search by title or author…" aria-label="Search stories">
+      <div class="filter-buttons"><button type="button" class="btn btn--filter active" data-filter="All">All</button><button type="button" class="btn btn--filter" data-filter="Romance">Romance</button><button type="button" class="btn btn--filter" data-filter="Horror">Horror</button><button type="button" class="btn btn--filter" data-filter="Fantasy">Fantasy</button><button type="button" class="btn btn--filter" data-filter="Drama">Drama</button><button type="button" class="btn btn--filter" data-filter="Adventure">Adventure</button><button type="button" class="btn btn--filter" data-filter="Fairy Tale">Fairy Tale</button><button type="button" class="btn btn--filter" data-filter="Comedy">Comedy</button><button type="button" class="btn btn--filter" data-filter="Fable">Fable</button><button type="button" class="btn btn--filter" data-filter="Thriller">Thriller</button><button type="button" class="btn btn--filter" data-filter="Mystery">Mystery</button></div>
+    </section>
+
+    <p class="result-count" id="result-count" aria-live="polite">Showing 30 of 30 stories</p>
 
     <section class="library">
       <h2 class="section-title">All Books</h2>
-      <div class="book-grid">
+      <div class="book-grid" id="library-grid">
 
-        <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-01.svg" alt="Cover of The Lantern Keeper">
+        <article class="book-card" data-genre="Romance">
+          <img class="book-card__cover" src="images/covers/cover-01.svg" alt="Cover of The Frog-King; or, Iron Henry">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Lantern Keeper</h3>
-            <p class="book-card__author">by Elara Whitmore</p>
-            <p class="book-card__genre">Fantasy</p>
+            <h3 class="book-card__title">The Frog-King; or, Iron Henry</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Romance</p>
             <a class="btn btn--read" href="stories/story-01.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-02.svg" alt="Cover of Clockwork Garden">
+        <article class="book-card" data-genre="Horror">
+          <img class="book-card__cover" src="images/covers/cover-02.svg" alt="Cover of The Wolf and the Seven Little Kids">
           <div class="book-card__body">
-            <h3 class="book-card__title">Clockwork Garden</h3>
-            <p class="book-card__author">by Tobias Reed</p>
-            <p class="book-card__genre">Fantasy</p>
+            <h3 class="book-card__title">The Wolf and the Seven Little Kids</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Horror</p>
             <a class="btn btn--read" href="stories/story-02.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Sci-Fi">
-          <img class="book-card__cover" src="images/covers/cover-03.svg" alt="Cover of Signal from Kepler Station">
+        <article class="book-card" data-genre="Fantasy">
+          <img class="book-card__cover" src="images/covers/cover-03.svg" alt="Cover of Rapunzel">
           <div class="book-card__body">
-            <h3 class="book-card__title">Signal from Kepler Station</h3>
-            <p class="book-card__author">by Dana Okafor</p>
-            <p class="book-card__genre">Sci-Fi</p>
+            <h3 class="book-card__title">Rapunzel</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Fantasy</p>
             <a class="btn btn--read" href="stories/story-03.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Mystery">
-          <img class="book-card__cover" src="images/covers/cover-04.svg" alt="Cover of The Last Bus to Nowhere">
+        <article class="book-card" data-genre="Drama">
+          <img class="book-card__cover" src="images/covers/cover-04.svg" alt="Cover of The Star-Money">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Last Bus to Nowhere</h3>
-            <p class="book-card__author">by Priya Nandakumar</p>
-            <p class="book-card__genre">Mystery</p>
+            <h3 class="book-card__title">The Star-Money</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Drama</p>
             <a class="btn btn--read" href="stories/story-04.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Romance">
-          <img class="book-card__cover" src="images/covers/cover-05.svg" alt="Cover of Salt and Honey">
+        <article class="book-card" data-genre="Adventure">
+          <img class="book-card__cover" src="images/covers/cover-05.svg" alt="Cover of The White Snake">
           <div class="book-card__body">
-            <h3 class="book-card__title">Salt and Honey</h3>
-            <p class="book-card__author">by Camille Dupree</p>
-            <p class="book-card__genre">Romance</p>
+            <h3 class="book-card__title">The White Snake</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Adventure</p>
             <a class="btn btn--read" href="stories/story-05.html">Read Story</a>
           </div>
         </article>
 
         <article class="book-card" data-genre="Horror">
-          <img class="book-card__cover" src="images/covers/cover-06.svg" alt="Cover of The House on Willow Lane">
+          <img class="book-card__cover" src="images/covers/cover-06.svg" alt="Cover of Haensel and Grethel">
           <div class="book-card__body">
-            <h3 class="book-card__title">The House on Willow Lane</h3>
-            <p class="book-card__author">by Gideon Ashby</p>
+            <h3 class="book-card__title">Haensel and Grethel</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
             <p class="book-card__genre">Horror</p>
             <a class="btn btn--read" href="stories/story-06.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Adventure">
-          <img class="book-card__cover" src="images/covers/cover-07.svg" alt="Cover of Captain Pip and the Paper Sea">
+        <article class="book-card" data-genre="Fantasy">
+          <img class="book-card__cover" src="images/covers/cover-07.svg" alt="Cover of The Seven Ravens">
           <div class="book-card__body">
-            <h3 class="book-card__title">Captain Pip and the Paper Sea</h3>
-            <p class="book-card__author">by Hannah Lowell</p>
-            <p class="book-card__genre">Adventure</p>
+            <h3 class="book-card__title">The Seven Ravens</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Fantasy</p>
             <a class="btn btn--read" href="stories/story-07.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fable">
-          <img class="book-card__cover" src="images/covers/cover-08.svg" alt="Cover of The Fox Who Borrowed Thunder">
+        <article class="book-card" data-genre="Romance">
+          <img class="book-card__cover" src="images/covers/cover-08.svg" alt="Cover of Ash-Maiden">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Fox Who Borrowed Thunder</h3>
-            <p class="book-card__author">by Samir Haddad</p>
-            <p class="book-card__genre">Fable</p>
+            <h3 class="book-card__title">Ash-Maiden</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Romance</p>
             <a class="btn btn--read" href="stories/story-08.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Sci-Fi">
-          <img class="book-card__cover" src="images/covers/cover-09.svg" alt="Cover of Beneath the Glass Ocean">
+        <article class="book-card" data-genre="Fairy Tale">
+          <img class="book-card__cover" src="images/covers/cover-09.svg" alt="Cover of The Elves and the Shoemaker">
           <div class="book-card__body">
-            <h3 class="book-card__title">Beneath the Glass Ocean</h3>
-            <p class="book-card__author">by Marina Volkov</p>
-            <p class="book-card__genre">Sci-Fi</p>
+            <h3 class="book-card__title">The Elves and the Shoemaker</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Fairy Tale</p>
             <a class="btn btn--read" href="stories/story-09.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Historical">
-          <img class="book-card__cover" src="images/covers/cover-10.svg" alt="Cover of The Cartographer&#x27;s Daughter">
+        <article class="book-card" data-genre="Comedy">
+          <img class="book-card__cover" src="images/covers/cover-10.svg" alt="Cover of The Three Brothers">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Cartographer&#x27;s Daughter</h3>
-            <p class="book-card__author">by Isolde Fairchild</p>
-            <p class="book-card__genre">Historical</p>
+            <h3 class="book-card__title">The Three Brothers</h3>
+            <p class="book-card__author">by Brothers Grimm</p>
+            <p class="book-card__genre">Comedy</p>
             <a class="btn btn--read" href="stories/story-10.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Comedy">
-          <img class="book-card__cover" src="images/covers/cover-11.svg" alt="Cover of Nine Lives of Mr. Whiskers">
+        <article class="book-card" data-genre="Adventure">
+          <img class="book-card__cover" src="images/covers/cover-11.svg" alt="Cover of The Lion and the Mouse">
           <div class="book-card__body">
-            <h3 class="book-card__title">Nine Lives of Mr. Whiskers</h3>
-            <p class="book-card__author">by Jonah Pierce</p>
-            <p class="book-card__genre">Comedy</p>
+            <h3 class="book-card__title">The Lion and the Mouse</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Adventure</p>
             <a class="btn btn--read" href="stories/story-11.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fairy Tale">
-          <img class="book-card__cover" src="images/covers/cover-12.svg" alt="Cover of The Day the Moon Fell Asleep">
+        <article class="book-card" data-genre="Fable">
+          <img class="book-card__cover" src="images/covers/cover-12.svg" alt="Cover of The Hare and the Tortoise">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Day the Moon Fell Asleep</h3>
-            <p class="book-card__author">by Lila Brannigan</p>
-            <p class="book-card__genre">Fairy Tale</p>
+            <h3 class="book-card__title">The Hare and the Tortoise</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Fable</p>
             <a class="btn btn--read" href="stories/story-12.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Thriller">
-          <img class="book-card__cover" src="images/covers/cover-13.svg" alt="Cover of Echoes in the Quarry">
+        <article class="book-card" data-genre="Fable">
+          <img class="book-card__cover" src="images/covers/cover-13.svg" alt="Cover of The Ants and the Grasshopper">
           <div class="book-card__body">
-            <h3 class="book-card__title">Echoes in the Quarry</h3>
-            <p class="book-card__author">by Victor Maddox</p>
-            <p class="book-card__genre">Thriller</p>
+            <h3 class="book-card__title">The Ants and the Grasshopper</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Fable</p>
             <a class="btn btn--read" href="stories/story-13.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-14.svg" alt="Cover of A Dragon Named Tuesday">
+        <article class="book-card" data-genre="Comedy">
+          <img class="book-card__cover" src="images/covers/cover-14.svg" alt="Cover of The Fox and the Crow">
           <div class="book-card__body">
-            <h3 class="book-card__title">A Dragon Named Tuesday</h3>
-            <p class="book-card__author">by Fiona Gallagher</p>
-            <p class="book-card__genre">Fantasy</p>
+            <h3 class="book-card__title">The Fox and the Crow</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Comedy</p>
             <a class="btn btn--read" href="stories/story-14.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Sci-Fi">
-          <img class="book-card__cover" src="images/covers/cover-15.svg" alt="Cover of The Robot Who Learned to Whistle">
+        <article class="book-card" data-genre="Thriller">
+          <img class="book-card__cover" src="images/covers/cover-15.svg" alt="Cover of The Shepherd’s Boy and the Wolf">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Robot Who Learned to Whistle</h3>
-            <p class="book-card__author">by Kenji Matsuda</p>
-            <p class="book-card__genre">Sci-Fi</p>
+            <h3 class="book-card__title">The Shepherd’s Boy and the Wolf</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Thriller</p>
             <a class="btn btn--read" href="stories/story-15.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Romance">
-          <img class="book-card__cover" src="images/covers/cover-16.svg" alt="Cover of Letters from the Lighthouse">
+        <article class="book-card" data-genre="Adventure">
+          <img class="book-card__cover" src="images/covers/cover-16.svg" alt="Cover of The Fox and the Goat">
           <div class="book-card__body">
-            <h3 class="book-card__title">Letters from the Lighthouse</h3>
-            <p class="book-card__author">by Ingrid Solberg</p>
-            <p class="book-card__genre">Romance</p>
+            <h3 class="book-card__title">The Fox and the Goat</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Adventure</p>
             <a class="btn btn--read" href="stories/story-16.html">Read Story</a>
           </div>
         </article>
 
         <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-17.svg" alt="Cover of The Midnight Library">
+          <img class="book-card__cover" src="images/covers/cover-17.svg" alt="Cover of The Frogs Asking for a King">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Midnight Library</h3>
-            <p class="book-card__author">by Rowan Ellis</p>
+            <h3 class="book-card__title">The Frogs Asking for a King</h3>
+            <p class="book-card__author">by Aesop</p>
             <p class="book-card__genre">Fantasy</p>
             <a class="btn btn--read" href="stories/story-17.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Horror">
-          <img class="book-card__cover" src="images/covers/cover-18.svg" alt="Cover of Whispers in the Cornfield">
+        <article class="book-card" data-genre="Thriller">
+          <img class="book-card__cover" src="images/covers/cover-18.svg" alt="Cover of The Sick Lion">
           <div class="book-card__body">
-            <h3 class="book-card__title">Whispers in the Cornfield</h3>
-            <p class="book-card__author">by Abigail Thorne</p>
-            <p class="book-card__genre">Horror</p>
+            <h3 class="book-card__title">The Sick Lion</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Thriller</p>
             <a class="btn btn--read" href="stories/story-18.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Drama">
-          <img class="book-card__cover" src="images/covers/cover-19.svg" alt="Cover of The Boy Who Collected Silence">
+        <article class="book-card" data-genre="Thriller">
+          <img class="book-card__cover" src="images/covers/cover-19.svg" alt="Cover of The Stag in the Ox-Stall">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Boy Who Collected Silence</h3>
-            <p class="book-card__author">by Theo Marchetti</p>
-            <p class="book-card__genre">Drama</p>
+            <h3 class="book-card__title">The Stag in the Ox-Stall</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Thriller</p>
             <a class="btn btn--read" href="stories/story-19.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Adventure">
-          <img class="book-card__cover" src="images/covers/cover-20.svg" alt="Cover of Treasure of the Drowned Bell">
+        <article class="book-card" data-genre="Comedy">
+          <img class="book-card__cover" src="images/covers/cover-20.svg" alt="Cover of The Mice in Council">
           <div class="book-card__body">
-            <h3 class="book-card__title">Treasure of the Drowned Bell</h3>
-            <p class="book-card__author">by Callum Redfern</p>
-            <p class="book-card__genre">Adventure</p>
+            <h3 class="book-card__title">The Mice in Council</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Comedy</p>
             <a class="btn btn--read" href="stories/story-20.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fairy Tale">
-          <img class="book-card__cover" src="images/covers/cover-21.svg" alt="Cover of The Girl and the Glass Mountain">
+        <article class="book-card" data-genre="Comedy">
+          <img class="book-card__cover" src="images/covers/cover-21.svg" alt="Cover of The Vain Jackdaw">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Girl and the Glass Mountain</h3>
-            <p class="book-card__author">by Zara Whitfield</p>
-            <p class="book-card__genre">Fairy Tale</p>
+            <h3 class="book-card__title">The Vain Jackdaw</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Comedy</p>
             <a class="btn btn--read" href="stories/story-21.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Sci-Fi">
-          <img class="book-card__cover" src="images/covers/cover-22.svg" alt="Cover of Dust of Distant Stars">
+        <article class="book-card" data-genre="Mystery">
+          <img class="book-card__cover" src="images/covers/cover-22.svg" alt="Cover of The Old Woman and the Physician">
           <div class="book-card__body">
-            <h3 class="book-card__title">Dust of Distant Stars</h3>
-            <p class="book-card__author">by Leona Castellanos</p>
-            <p class="book-card__genre">Sci-Fi</p>
+            <h3 class="book-card__title">The Old Woman and the Physician</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Mystery</p>
             <a class="btn btn--read" href="stories/story-22.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fable">
-          <img class="book-card__cover" src="images/covers/cover-23.svg" alt="Cover of The Tailor of Thistledown">
+        <article class="book-card" data-genre="Adventure">
+          <img class="book-card__cover" src="images/covers/cover-23.svg" alt="Cover of The Bear and the Two Travelers">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Tailor of Thistledown</h3>
-            <p class="book-card__author">by Edmund Fairbairn</p>
-            <p class="book-card__genre">Fable</p>
+            <h3 class="book-card__title">The Bear and the Two Travelers</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Adventure</p>
             <a class="btn btn--read" href="stories/story-23.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Mystery">
-          <img class="book-card__cover" src="images/covers/cover-24.svg" alt="Cover of Smoke Over Blackwater">
+        <article class="book-card" data-genre="Drama">
+          <img class="book-card__cover" src="images/covers/cover-24.svg" alt="Cover of The Dog and the Shadow">
           <div class="book-card__body">
-            <h3 class="book-card__title">Smoke Over Blackwater</h3>
-            <p class="book-card__author">by Rhea Donovan</p>
-            <p class="book-card__genre">Mystery</p>
+            <h3 class="book-card__title">The Dog and the Shadow</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Drama</p>
             <a class="btn btn--read" href="stories/story-24.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-25.svg" alt="Cover of Seven Wishes at the Wishing Well">
+        <article class="book-card" data-genre="Drama">
+          <img class="book-card__cover" src="images/covers/cover-25.svg" alt="Cover of The Wolf and the Lamb">
           <div class="book-card__body">
-            <h3 class="book-card__title">Seven Wishes at the Wishing Well</h3>
-            <p class="book-card__author">by Noor Aziz</p>
-            <p class="book-card__genre">Fantasy</p>
+            <h3 class="book-card__title">The Wolf and the Lamb</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Drama</p>
             <a class="btn btn--read" href="stories/story-25.html">Read Story</a>
           </div>
         </article>
 
         <article class="book-card" data-genre="Comedy">
-          <img class="book-card__cover" src="images/covers/cover-26.svg" alt="Cover of The Great Pancake Disaster">
+          <img class="book-card__cover" src="images/covers/cover-26.svg" alt="Cover of The Astronomer">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Great Pancake Disaster</h3>
-            <p class="book-card__author">by Bernard Pickles</p>
+            <h3 class="book-card__title">The Astronomer</h3>
+            <p class="book-card__author">by Aesop</p>
             <p class="book-card__genre">Comedy</p>
             <a class="btn btn--read" href="stories/story-26.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Adventure">
-          <img class="book-card__cover" src="images/covers/cover-27.svg" alt="Cover of Beyond the Frozen Gate">
+        <article class="book-card" data-genre="Drama">
+          <img class="book-card__cover" src="images/covers/cover-27.svg" alt="Cover of The Tortoise and the Eagle">
           <div class="book-card__body">
-            <h3 class="book-card__title">Beyond the Frozen Gate</h3>
-            <p class="book-card__author">by Astrid Lindgaard</p>
-            <p class="book-card__genre">Adventure</p>
+            <h3 class="book-card__title">The Tortoise and the Eagle</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Drama</p>
             <a class="btn btn--read" href="stories/story-27.html">Read Story</a>
           </div>
         </article>
 
         <article class="book-card" data-genre="Drama">
-          <img class="book-card__cover" src="images/covers/cover-28.svg" alt="Cover of The Violin in the Attic">
+          <img class="book-card__cover" src="images/covers/cover-28.svg" alt="Cover of The Father and His Sons">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Violin in the Attic</h3>
-            <p class="book-card__author">by Margot Beaumont</p>
+            <h3 class="book-card__title">The Father and His Sons</h3>
+            <p class="book-card__author">by Aesop</p>
             <p class="book-card__genre">Drama</p>
             <a class="btn btn--read" href="stories/story-28.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Fantasy">
-          <img class="book-card__cover" src="images/covers/cover-29.svg" alt="Cover of The Wind Merchant">
+        <article class="book-card" data-genre="Thriller">
+          <img class="book-card__cover" src="images/covers/cover-29.svg" alt="Cover of The Farmer and the Snake">
           <div class="book-card__body">
-            <h3 class="book-card__title">The Wind Merchant</h3>
-            <p class="book-card__author">by Tariq Benali</p>
-            <p class="book-card__genre">Fantasy</p>
+            <h3 class="book-card__title">The Farmer and the Snake</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Thriller</p>
             <a class="btn btn--read" href="stories/story-29.html">Read Story</a>
           </div>
         </article>
 
-        <article class="book-card" data-genre="Drama">
-          <img class="book-card__cover" src="images/covers/cover-30.svg" alt="Cover of Home at the End of the Road">
+        <article class="book-card" data-genre="Fable">
+          <img class="book-card__cover" src="images/covers/cover-30.svg" alt="Cover of The Boy and the Filberts">
           <div class="book-card__body">
-            <h3 class="book-card__title">Home at the End of the Road</h3>
-            <p class="book-card__author">by Nadia Hartwell</p>
-            <p class="book-card__genre">Drama</p>
+            <h3 class="book-card__title">The Boy and the Filberts</h3>
+            <p class="book-card__author">by Aesop</p>
+            <p class="book-card__genre">Fable</p>
             <a class="btn btn--read" href="stories/story-30.html">Read Story</a>
           </div>
         </article>
 
       </div>
+      <p class="no-results" id="no-results" hidden>No stories match your search. Try another word or genre.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2026 Storybook. ITE 1 Project.</p>
     <p>Created by Mark Lawrence S. Bas</p>
+    <p>Stories are public domain classics from Project Gutenberg (gutenberg.org).</p>
   </footer>
 </body>
 </html>
